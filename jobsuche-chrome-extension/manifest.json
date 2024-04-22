@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Jobsuche Extension",
+    "description": "Hilft bei der Jobsuche",
+    "version": "1.0",
+    "action": {
+      "default_popup": "html/hello.html",
+      "default_icon":  "img/job-search-16.png"
+    }
+  }
