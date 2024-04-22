@@ -6,5 +6,20 @@
     "action": {
       "default_popup": "html/hello.html",
       "default_icon":  "img/job-search-16.png"
-    }
+    },
+    "icons": {
+      "16": "img/job-search-16.png",
+      "32": "img/job-search-32.png",
+      "48": "img/job-search-32.png",
+      "64": "img/job-search-64.png",
+      "128": "img/job-search-128.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["js/content.js"],
+        "matches": [
+          "https://www.xing.com/jobs/search?*"
+        ]
+      }
+    ]
   }
