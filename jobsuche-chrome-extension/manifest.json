@@ -16,10 +16,15 @@
     },
     "content_scripts": [
       {
-        "js": ["js/content.js"],
+        "js": ["js/xing_jobs_search.js"],
         "matches": [
           "https://www.xing.com/jobs/search?*"
         ]
+      },
+      {
+        "js": ["js/xing_jobs_item.js"],
+        "matches": ["https://www.xing.com/jobs/*"],
+        "exclude_matches": ["https://www.xing.com/jobs/search?*"]
       }
     ]
   }
