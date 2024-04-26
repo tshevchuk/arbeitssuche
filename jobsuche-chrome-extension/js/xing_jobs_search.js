@@ -11,11 +11,14 @@ setInterval(() => {
 
 
 let jobTitlePatterns = [
-    /^Architect | Architect | Architect$|-Architect /g,
+    /\bArchitect\b/g,
+    /\bArchitekt\b/g,
+    /\bSoftwarearchitekt\b/g,
+    /\bSystemarchitekt\b/g,
     /^Senior\s/g,
     /^Sr\.\s/g,
-    / Administrator /g,
-    / Systemadministrator /g
+    /\bAdministrator\b/g,
+    /\bSystemadministrator\b/g
 ];
 
 
