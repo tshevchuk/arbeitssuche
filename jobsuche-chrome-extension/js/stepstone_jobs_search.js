@@ -13,18 +13,26 @@ let jobTitlePatterns = [
 ];
 
 
-setInterval(() => {
-    const xingPostingSaved = document.querySelectorAll('article[data-at=job-item]')
+function hideJobsByJobTitle() {
+    setTimeout(() => {
+        const xingPostingSaved = document.querySelectorAll('article[data-at=job-item]')
 
-    xingPostingSaved.forEach((item) => {
-        const jobPostingTitle = item.querySelector('a[data-testid="job-item-title"] > div > div > div').textContent
-
-        for (const index in jobTitlePatterns) {
-            if (jobPostingTitle.match(jobTitlePatterns[index])) {
-                item.style.display = "none";
-                break;
+        xingPostingSaved.forEach((item) => {
+            const jobPostingTitle = item.querySelector('a[data-testid="job-item-title"] > div > div > div').textContent
+    
+            for (const index in jobTitlePatterns) {
+                if (jobPostingTitle.match(jobTitlePatterns[index])) {
+                    item.style.display = "none";
+                    break;
+                }
             }
-        }
+    
+        });
+    }, 3000);
+}
 
-    });
-}, 3000);
+hideJobsByJobTitle();
+
+navigation.addEventListener('navigate', (event) => {
+    hideJobsByJobTitle();
+});
