@@ -1,0 +1,3 @@
+article:has(button[data-testid="bookmark-action-button-filled"]) {
+    display: none;
+}

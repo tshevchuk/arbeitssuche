@@ -1,14 +1,6 @@
 
 console.log('stepstone_jobs_search.js')
 
-setInterval(() => {
-    let xingPostingSaved = document.querySelectorAll('article[data-at=job-item]:has(div[data-at="listing-saved-icon"])')
-
-    xingPostingSaved.forEach((item) => {
-        item.style.display = "none";
-    });
-}, 3000);
-
 let jobTitlePatterns = [
     /\bArchitect\b/g,
     /\bArchitekt\b/g,

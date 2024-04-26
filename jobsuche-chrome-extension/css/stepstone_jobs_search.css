@@ -1,0 +1,3 @@
+article[data-at=job-item]:has(div[data-at="listing-saved-icon"]) {
+    display: none;
+}
