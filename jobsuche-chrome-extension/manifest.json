@@ -16,19 +16,19 @@
     },
     "content_scripts": [
       {
-        "js": ["js/xing_jobs_search.js"],
+        "js": ["js/common.js", "js/xing_jobs_search.js"],
         "css": ["css/xing_jobs_search.css"],
         "matches": [
           "https://www.xing.com/jobs/search?*"
         ]
       },
       {
-        "js": ["js/xing_jobs_item.js"],
+        "js": ["js/common.js", "js/xing_jobs_item.js"],
         "matches": ["https://www.xing.com/jobs/*"],
         "exclude_matches": ["https://www.xing.com/jobs/search?*"]
       },
       {
-        "js": ["js/stepstone_jobs_search.js"],
+        "js": ["js/common.js", "js/stepstone_jobs_search.js"],
         "css": ["css/stepstone_jobs_search.css"],
         "matches": [
           "https://www.stepstone.de/jobs/*"
