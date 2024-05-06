@@ -3,6 +3,9 @@
     "name": "Jobsuche Extension",
     "description": "Hilft bei der Jobsuche",
     "version": "1.0",
+    "permissions": [
+      "sidePanel"
+    ],
     "action": {
       "default_popup": "html/hello.html",
       "default_icon":  "img/job-search-16.png"
@@ -40,5 +43,11 @@
           "https://www.linkedin.com/jobs/search/*"
         ]
       }
-    ]
+    ],
+    "side_panel": {
+      "default_path": "side_panel/side_panel.html"
+    },
+    "background": {
+      "service_worker": "js/service_worker.js"
+    }
   }
