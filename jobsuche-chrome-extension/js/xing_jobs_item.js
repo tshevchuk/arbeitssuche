@@ -26,6 +26,22 @@ function processContent() {
             .length > 0
 
     console.log('isHybrid: ' + isHybrid)
+
+    const jobDetails = {
+        jobTitle,
+        companyName,
+        companyUrl,
+        cityName,
+        isHybrid
+    };
+
+
+    chrome.runtime.sendMessage(
+        null,
+        {'message': jobDetails},
+        null,
+        response => console.log('response: ' + response)
+    )
 }
 
 setTimeout(processContent, 3000)
