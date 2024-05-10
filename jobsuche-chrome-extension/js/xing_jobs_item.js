@@ -5,6 +5,7 @@ console.log('xing_jobs_item.js')
 function processContent() {
     const headerSection = document.querySelector('div[data-testid="job-details-header"]')
     const contentSection = headerSection.parentElement.children[1]
+    const jobDescriptionDiv = document.querySelector('div.html-description-template')
 
     console.log(contentSection)
 
@@ -32,7 +33,8 @@ function processContent() {
         companyName,
         companyUrl,
         cityName,
-        isHybrid
+        isHybrid,
+        jobDescription: jobDescriptionDiv.textContent
     };
 
 

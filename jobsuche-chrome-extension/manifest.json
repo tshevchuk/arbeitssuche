@@ -4,7 +4,7 @@
     "description": "Hilft bei der Jobsuche",
     "version": "1.0",
     "permissions": [
-      "sidePanel"
+      "sidePanel", "storage"
     ],
     "action": {
       "default_popup": "html/hello.html",
