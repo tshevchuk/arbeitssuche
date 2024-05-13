@@ -34,7 +34,7 @@ function processContent() {
         companyUrl,
         cityName,
         isHybrid,
-        jobDescription: jobDescriptionDiv.textContent
+        jobDescriptionHtml: jobDescriptionDiv.innerHTML
     };
 
 
